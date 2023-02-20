@@ -36,3 +36,98 @@
     transform: rotate(360deg);
   }
 }
+.colora{
+background-color: #343a40;
+}
+
+.japan{
+  background-image:url("C:\Users\NEW\Documents\e-commerce-proj\my-app\src\images\japan.jpg");
+  background-repeat: no-repeat;
+  height: 600px;
+ background-color:#92711f;
+  
+background-size:auto;
+background-position: center;
+}
+@media (max-width:800px){
+  .japan{
+  width: auto;
+  }
+ 
+}
+.large{
+font-size: 50px;
+}
+body{
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  
+}
+.nne{
+  display:grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap:30px;
+}
+@media (max-width:800px){
+  .nne{
+    display:grid;
+   grid-auto-flow: row;
+   grid-auto-rows: max-content;
+   width:auto;
+  }
+}
+@media (min-width:801px){
+  .nne{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width:auto;
+    
+  }
+  
+}
+.pk{
+width:300px;
+  margin-left:10px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+@media (max-width:800px){
+  .pk{
+    width:100px;
+   margin-left:0;
+    
+  }
+}
+.bd{
+  border-top:none;
+  border: none;
+  border-bottom:solid 1px white;
+  outline: none;
+}
+.tt{
+  height: 1000px;
+  margin-top: -100px;
+}
+.backdrop{
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  width:100%;
+  background-color: #343a40;
+}
+.trans{
+  transform: translateX(-100%);
+  transition: all 3s;
+  
+  transition-delay: 50ms;
+  transition-duration: 500ms;
+}
+.Open{
+  transform: translate(0%);
+  transition: all 3s;
+  transition-delay: 50ms;
+  transition-duration: 500ms;
+  position:fixed;
+}
